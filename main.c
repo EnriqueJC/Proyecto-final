@@ -1,20 +1,20 @@
+//DESAROLLO DE UN ROL DE PAGOS 
 #include <stdio.h>
 #include <stdlib.h>
-int main(int argc, char *argv[]) {
-	int *pb,*pc;
-	int a[5]={10,20,30,40,50};
-	int i=0;
-	pb=a;
-	*pb=11;
-	printf("a -> %d\n",a);
-	for(i=0;i<5;i++){
-		printf("Elemento %d -> %d\n",i,a[i]);
-	}
-	pc=&a[3];
-	*pb=44;
-	printf("a -> %d\n",a);
-	for(i=0;i<5;i++){
-		printf("Elemento %d -> %d\n",i,a[i]);
-	}
-	return 0;
+typedef struct Empresa{
+	char Nombre[20];
+	char RUC[15];
+	char Direccion[30];
+}Empresa;
+int main(){
+	struct Empresa i;
+	int d;
+	printf("Datos Empresa\n");
+	printf("NOMBRE:\t");
+	scanf(" %s",&i.Nombre);
+	printf("RUC:\t");
+	scanf(" %s",&i.RUC);
+	printf("DIRECION:\t");
+	scanf(" %s",&i.Direccion);
+return 0;
 }
