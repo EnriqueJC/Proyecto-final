@@ -5,6 +5,7 @@ typedef struct Empresa{
 	char Nombre[20];
 	char RUC[15];
 	char Direccion[30];
+	char Fecha[30];
 }Empresa;
 int main(){
 	struct Empresa i;
@@ -16,5 +17,7 @@ int main(){
 	scanf(" %s",&i.RUC);
 	printf("DIRECION:\t");
 	scanf(" %s",&i.Direccion);
+	printf("FECHA:\t");
+	scanf(" %s",&i.Fecha);
 return 0;
 }
