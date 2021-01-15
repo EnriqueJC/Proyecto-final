@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+
 typedef struct Empleados{
 	char Nombre[10];
 	char Apellido[10];
@@ -9,6 +10,7 @@ typedef struct Empleados{
 	int Horasextras100;
 	
 } Empleados;
+void ingresos(Empleados E);
 int main(int argc, char *argv[]) {
 	struct Empleados e[10]; 
 	int i = 0;
@@ -27,6 +29,14 @@ int main(int argc, char *argv[]) {
 	    printf("Horasextras100: \t");
 		scanf("%s",&e[i].Horasextras100);
 		 
+}
+void ingresos(Empleados E[]){
+	int i = 0, ingresos = 0;
+	for(i=0;i<10;i++){
+		if(E[i].SueldoBasico>=345 && E[i].SueldoBasico<300)
+		ingresos++;
+	}
+	printf("El ingreso del sueldo basico es: %d.\n",i);
 }
 	return 0;
 }
